@@ -15,6 +15,8 @@ class Matrix:
 if __name__ == '__main__':
     matrix_example = Matrix("1 2 3\n4 5 6\n7 8 9\n8 7 6")
     matrix_example.print_row()
-    print(matrix_example.rows)
+    print("Rows: ")
+    print(*matrix_example.rows, sep="\n")
     matrix_example.print_column()
-    print(matrix_example.columns)
+    print("\nColumns: ")
+    print(*matrix_example.columns,sep="\n")
